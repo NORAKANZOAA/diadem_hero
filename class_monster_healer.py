@@ -1,0 +1,2 @@
+class MonsterHealer:
+    pass
