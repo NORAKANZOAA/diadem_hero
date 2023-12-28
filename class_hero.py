@@ -3,8 +3,6 @@ class Hero:
         self.life = life
         self.potion = potion
 
-    
-
 
 
     
