@@ -58,14 +58,14 @@ while True:
             # ALORS SI il se soigne
         if random.choice == True:
             #   ALORS soigner
-            monster.heal()
+            pass
             #   SINON attaquer
         else:
-             monster.monster_attack(hero)
+             pass
             # SINON attaquer directement
     else:
-        monster.monster_attack(hero)
+        pass
     
-    pass
+    
 
 print("Le jeu est terminé")
