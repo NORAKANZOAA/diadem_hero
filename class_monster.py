@@ -7,8 +7,14 @@ class Monster:
         self.life = life
         self.level = random.randint(1,3)
         # self.monster_attack = int 
-    def attack_hero (self,hero) :
+    def monster_attack (self,hero) :
         hero.life -= 1
+
+        
+
+        print(f"Le monstre vous a attaqué, vous avez perdu 1 point de vie, il vous en reste {hero.life}.")
+
+
 
     
     
