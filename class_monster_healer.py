@@ -1,4 +1,5 @@
 from class_monster import Monster
 
 class MonsterHealer(Monster):
-    pass
+    def heal(self):
+        self.life += 1
