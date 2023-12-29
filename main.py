@@ -3,8 +3,6 @@ from class_hero import Hero
 from class_monster import Monster
 from class_monster_healer import MonsterHealer
 
-
-
 hero = Hero()
 monster = MonsterHealer()
 
@@ -21,38 +19,24 @@ def show_menu() -> int:
         show_menu()
 
 
-
-def get_diademe():
-    pass
-
-def check_game():
-    pass
-
 while True:
     if monster.life <= 0:
-        
         break
     if hero.life <= 0:
         print("Vous avez perdu, le monstre vous a tué.")
         break
 
-    # Show menu to the hero
+    # HERO TURN
     choice = show_menu()
-    # tant que les points de vie sont > 0 , le combat continue
    
-    #sinon le monstre meurt ou le hero meurt
-    # The hero has chosen a option
     if choice == 1:
         hero.hero_attack(monster)
         
         
             
     elif choice == 2:
-            # The hero wants to take a potion
         if hero.potion > 0:
                 hero.drink_potion()
-        
-                
         else:
                 print("Vous n'avez plus de potion, faîtes un autre choix.")
         
@@ -62,25 +46,16 @@ while True:
     elif choice == 4:
             # Quit game
             break
-        # MONSTRE
         
-        # SI monstre healer
+    # MONSTER TURN
     if monster.life > 0:
                 
         if isinstance(monster, MonsterHealer):
-                # ALORS SI il se soigne
             if random.choice ([True, False,False]):
-                    monster.heal()
-                
-                #   SINON attaquer
+                monster.heal()
             else:
-                    monster.monster_attack(hero)
-                
-                # SINON attaquer directement
+                monster.monster_attack(hero)
         else:
             monster.monster_attack(hero)
             
-    
-    
-
 print("Le jeu est terminé")
