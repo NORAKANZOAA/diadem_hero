@@ -3,6 +3,14 @@ class Hero:
         self.life = life
         self.potion = potion
 
+    
+    def hero_attack(self,monster):
+        monster.life -= 1
+
+    def drink_potion(self):
+        self.potion -= 1 and hero.life == 5
+
 
 
     
+hero = Hero(life = 5, potion = 3)
