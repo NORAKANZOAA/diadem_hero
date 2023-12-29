@@ -10,10 +10,6 @@ class Hero:
         monster.life -= 1
 
     def drink_potion(self):
-        self.potion -= 1 and hero.life == 5
+        self.potion -= 1  
+        self.life = 5
 
-
-
-    
-hero = Hero(life = 5, potion = 3)
-monster = Monster
