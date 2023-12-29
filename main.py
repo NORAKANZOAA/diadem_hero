@@ -1,7 +1,12 @@
+import random
 from class_hero import Hero
+from class_monster import Monster
+from class_monster_healer import MonsterHealer
+
+random.choice = ([True, False])
 
 hero = Hero()
-monsters = []
+monster = Monster()
 
 def show_menu() -> int:
     print("\nC'est à votre tour de jouer, que souhaitez vous faire ?\n")
@@ -14,6 +19,8 @@ def show_menu() -> int:
         return int(choice)
     else:
         show_menu()
+
+
 
 def get_diademe():
     pass
@@ -44,5 +51,21 @@ while True:
     elif(choice == 4):
         # Quit game
         break
+    # MONSTRE
+    
+    # SI monstre healer
+    if isinstance(monster, MonsterHealer):
+            # ALORS SI il se soigne
+        if random.choice == True:
+            #   ALORS soigner
+            pass
+            #   SINON attaquer
+        else:
+             pass
+            # SINON attaquer directement
+    else:
+        pass
+    
+    
 
 print("Le jeu est terminé")
