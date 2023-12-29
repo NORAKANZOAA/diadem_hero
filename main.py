@@ -42,6 +42,6 @@ while monster.life > 0 and hero.life > 0:
         else:
                     monster.monster_attack()
     
-    pass
+        pass
 
 print("Le jeu est terminé")
