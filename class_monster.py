@@ -1,5 +1,5 @@
 import random
-from class_hero import Hero
+
 
 class Monster:
     def __init__(self, life = 5):
