@@ -4,13 +4,10 @@ hero = Hero()
 monsters = []
 
 def get_diademe():
-    pass
 
 def check_game():
-    pass
 
 while len(monsters) > 0:
-    pass
 # Afficher le menu
 
     # En fonction du choix faire des actions
@@ -29,6 +26,5 @@ while len(monsters) > 0:
     #   ALORS soigner
     #   SINON attaquer
     # SINON attaquer directement
-    
-    pass
+
 print("Le jeu est terminé")
